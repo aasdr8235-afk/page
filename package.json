@@ -3,6 +3,8 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build.mjs",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev",
     "test": "node tests/browser-audit.cjs",
     "test:lighthouse": "node tests/lighthouse-audit.cjs",
     "test:links": "node tests/check-links.cjs",
@@ -11,6 +13,11 @@
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",
     "lighthouse": "13.5.0",
-    "playwright": "1.63.0"
+    "playwright": "1.63.0",
+    "wrangler": "^4.136.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "workerd@1.20260921.1": true
   }
 }
