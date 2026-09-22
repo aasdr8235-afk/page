@@ -1,0 +1,16 @@
+{
+  "name": "mouhib-technical-archive",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node tests/browser-audit.cjs",
+    "test:lighthouse": "node tests/lighthouse-audit.cjs",
+    "test:links": "node tests/check-links.cjs",
+    "test:assistant": "node tests/assistant-audit.cjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "lighthouse": "13.5.0",
+    "playwright": "1.63.0"
+  }
+}
